@@ -1,0 +1,14 @@
+<h1>Exercice 1 : Text interpolation</h1>
+
+<h2>List friends - Bienvenue sur votre profil !</h2>
+
+<div class="grid grid-cols-3 gap-4">
+    <app-one-friend 
+        *ngFor="let friend of friendsList" 
+        [name]="friend.name" 
+        [city]="friend.city" 
+        [age]="friend.age" 
+        [description]="friend.description"
+        [reputation]="friend.reputation">
+    </app-one-friend>
+</div>
