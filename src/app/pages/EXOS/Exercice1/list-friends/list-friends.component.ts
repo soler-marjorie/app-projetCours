@@ -24,6 +24,23 @@ export class ListFriendsComponent {
       this.isButtonDisabled = true;
     }, 3000); 
   }
+
+  //Ajouter un ami
+  friendName: string = ''; 
+  message: string = 'Aucun ami'; 
+
+  updateFriendName(event: Event) {
+    const inputElement = event.target as HTMLInputElement;
+    this.friendName = inputElement.value;
+  }
+
+  addFriend() {
+    if (this.friendName.trim() !== '') {
+      this.message = `Votre ami ${this.friendName} a été ajouté !`;
+    } else {
+      this.message = "Veuillez entrer un nom d'ami.";
+    }
+  }
 }
 
 
