@@ -1,7 +1,7 @@
 <h2>Vos informations : </h2>
-<div class="bg-white p-4 rounded shadow-sm">
+<div class="bg-white p-4 rounded shadow-sm" [ngStyle]="{ 'background-color': getColor() }">
     <img [attr.src]="imageUrl" alt="photo aléatoire" class="rounded-circle d-block mx-auto ">
-    <h3 class="fs-4 fw-bold text-center">{{ name }}</h3>
+    <h3 [ngClass]="oneFriendStyle === 'OFF' ? 'amiOff' : 'amiOn'" class="fs-4 fw-bold text-center">{{ name }}</h3>
     <p class="text-muted text-center">Résidence: {{ city }}</p>
     <p>Âge: {{ age }}</p>
     <p>Description: {{ description }}</p>
