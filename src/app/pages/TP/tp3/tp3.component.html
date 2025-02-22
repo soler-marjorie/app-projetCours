@@ -1,0 +1,15 @@
+<h1>TP 3 : Directives</h1>
+
+<section>
+    <button [ngClass]="affichageMessage === 'OFF' ? 'messageOff' : 'messageOn'" class="btn btn-success" (click)="addMore(); addArray()">Afficher détails</button>
+    
+    <p *ngIf="affichageMessage === 'ON'">{{ affichageMessage }}</p>
+
+    <div *ngFor="let item of items; let i = index">
+        <!-- Apply conditional styling from 5th element onwards -->
+        <p *ngIf="i < 5">{{ item }}</p>
+        <p *ngIf="i >= 5" [ngStyle]="{'background-color': 'blue'}" [ngClass]="'text-white'">
+            {{ item }}
+        </p>
+    </div>
+</section>
