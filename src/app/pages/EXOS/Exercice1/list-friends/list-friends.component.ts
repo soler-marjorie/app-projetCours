@@ -12,9 +12,9 @@ import { OneFriendComponent } from "../../../../components/EXOS/exercice1/one-fr
 
 export class ListFriendsComponent {
   friendsList = [
-    { name: 'Steven Caplan', city: 'Nice', age: 34, description: 'Développeur passionné', reputation: 30, imageUrl: 'https://www.atlasseo.fr/images/agence-seo/blog/holi-festival-india_750x280.jpg' },
+    { name: 'Steven Caplan', city: 'Nice', age: 34, description: 'Développeur passionné', reputation: 30, imageUrl: 'https://nextjourneys.com/wp-content/uploads/2017/07/4k-nature-wallpaper-images-Is-Cool-Wallpapers-e1499358589400.jpg' },
     { name: 'Alice Dupont', city: 'Paris', age: 28, description: 'Designer graphique', reputation: 80, imageUrl: ''},
-    { name: 'Mohamed Ali', city: 'Lyon', age: 40, description: 'Ingénieur DevOps', reputation: 65, imageUrl: 'https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg'}
+    { name: 'Mohamed Ali', city: 'Lyon', age: 40, description: 'Ingénieur DevOps', reputation: 65, imageUrl: 'https://www.drsebaa.com/wp-content/uploads/2019/03/spring-bird-2295436_1280.jpg'}
   ];
 
   isButtonDisabled = false;

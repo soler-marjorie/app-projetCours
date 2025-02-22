@@ -1,0 +1,11 @@
+img{
+    width: 150px;
+    height: 150px;
+}
+
+.amiOn{
+    color: chartreuse;
+  }
+.amiOff{
+color: violet;
+}

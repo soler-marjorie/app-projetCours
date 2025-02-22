@@ -3,6 +3,7 @@ import { Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 
 import { TP1Component } from './pages/TP/tp1/tp1.component';
+import { Tp2Component } from './pages/TP/tp2/tp2.component';
 
 import { ListFriendsComponent } from './pages/EXOS/Exercice1/list-friends/list-friends.component';
 
@@ -15,6 +16,7 @@ export const routes: Routes = [
 
 
     { path: 'tp1', component: TP1Component }, 
+    { path: 'tp2', component: Tp2Component }, 
 
     { path: 'exercice1', component: ListFriendsComponent }, 
 

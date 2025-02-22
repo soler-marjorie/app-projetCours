@@ -3,11 +3,11 @@
 <section>
     <h2>Ajouter un ami</h2>
 
-    <input type="text" (input)="updateFriendName($event)" placeholder="Entrez un nom" />
+    <input type="text" (input)="updateFriendName($event)" class="form-control" placeholder="Entrez un nom" />
 
     <p>Votre ami : {{ friendName }}</p>
     
-    <button (click)="addFriend()">Ajouter un ami</button>
+    <button class="btn btn-success" (click)="addFriend()">Ajouter un ami</button>
     
     <p>{{ message }}</p>
 </section>
@@ -15,19 +15,14 @@
 <section>
     <h2>List friends - Bienvenue sur votre profil !</h2>
 
-    <button [disabled]="isButtonDisabled" class="bg-green-500 text-white px-4 py-2 rounded">
-        Ajouter Ami
-    </button>
-
-    <div *ngFor="let friend of friendsList" class="grid grid-cols-3 gap-4">
+    <div *ngFor="let friend of friendsList" class="row g-4">
         <app-one-friend 
             [name]="friend.name" 
             [city]="friend.city" 
             [age]="friend.age" 
             [description]="friend.description"
             [reputation]="friend.reputation"
-            [imageUrl]="friend.imageUrl || 'https://picsum.photos/seed/picsum/150/150'"
-        >
+            [imageUrl]="friend.imageUrl || 'https://picsum.photos/seed/picsum/150/150'">
         </app-one-friend>
     </div>
 </section>
