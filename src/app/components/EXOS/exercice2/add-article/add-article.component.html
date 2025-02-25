@@ -1,0 +1,23 @@
+<form action="post" class="add-article">
+  <h2>Add-Article</h2>
+  <p>Ajoutez un article ou un brouillon !</p>
+
+    <div>
+      <label for="title">Titre Article</label>
+      <input type="text" id="title" [(ngModel)]="title" placeholder="Titre de l'article">
+    </div>
+
+    <div>
+      <label for="content">Contenu Article</label>
+      <textarea id="content" [(ngModel)]="content" placeholder="Contenu de l'article"></textarea>
+    </div>
+
+    <div>
+      <label for="author">Auteur</label>
+      <input type="text" id="author" [(ngModel)]="author" placeholder="Nom de l'auteur">
+    </div>
+
+  
+  <button (click)="createArticle()">Ajouter Article</button>
+  <button (click)="createBrouillon()">Ajouter Brouillon</button>
+</form>

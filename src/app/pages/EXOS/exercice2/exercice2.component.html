@@ -1,0 +1,15 @@
+<h1>Exercice 7 : Input and Output(Component Communication)</h1>
+<div class="blog-container">
+  <h1>Blog Control Center</h1>
+
+  <!-- Formulaire d'ajout d'articles -->
+  <app-add-article 
+    (articleCreated)="onArticleAdded($event)" 
+    (brouillonCreated)="onBrouillonAdded($event)">
+  </app-add-article>
+
+  <!-- Affichage des articles -->
+  <div *ngFor="let article of articles">
+    <app-article-element [article]="article"></app-article-element>
+  </div>
+</div>
